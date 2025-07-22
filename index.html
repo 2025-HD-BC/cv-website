@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerhardus Coetser – Embedded Systems & Full-Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f3f6fa;
+            color: #222;
+        }
+        .container {
+            max-width: 920px;
+            margin: 2em auto;
+            background: #fff;
+            padding: 2.5em 2em;
+            border-radius: 16px;
+            box-shadow: 0 6px 36px #99aabb22;
+        }
+        h1, h2, h3 {
+            color: #326fa8;
+            margin-top: 0.5em;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+        }
+        .flex {
+            display: flex;
+            gap: 2em;
+            flex-wrap: wrap;
+        }
+        .main-head {
+            align-items: flex-start;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 2px 10px #aac;
+        }
+        .about {
+            flex: 1 1 250px;
+        }
+        .section {
+            margin-bottom: 2.5em;
+        }
+        ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: disc inside;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5em 2em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        .skills-grid > div {
+            padding-right: 1em;
+            min-width: 180px;
+        }
+        @media (max-width: 900px) {
+            .skills-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .skills-grid { grid-template-columns: 1fr; }
+        }
+        .project {
+            margin-bottom: 1.1em;
+        }
+        .tag {
+            display: inline-block;
+            background: #e0ebf8;
+            color: #2771b4;
+            border-radius: 8px;
+            padding: 0.15em 0.65em;
+            font-size: 0.92em;
+            margin: 0 0.25em 0.25em 0;
+        }
+        .contact-info li {
+            margin-bottom: 0.3em;
+        }
+        .badge {
+            font-size: 0.8em;
+            background: #b3d4fc;
+            color: #245488;
+            border-radius: 6px;
+            padding: 2px 8px;
+            margin-left: 0.5em;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1em; }
+            .flex { flex-direction: column; gap: 1em; }
+            .profile-img { margin-bottom: 1em; }
+        }
+        a {
+            color: #2771b4;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover, a:focus {
+            color: #19446b;
+            text-decoration: underline;
+        }
+        .section:not(:first-child) {
+            border-top: 1px solid #e4eaf2;
+            padding-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex main-head">
+            <!-- Optional profile image: add profile.jpg to your repo and uncomment below -->
+            <!-- <img src="profile.jpg" alt="Gerhardus Coetser" class="profile-img"> -->
+            <div class="about">
+                <h1>Gerhardus Coetser</h1>
+                <p>
+                    <b>Embedded Systems Engineer & Full-Stack Developer</b>
+                </p>
+                <p>
+                    Highly skilled technical specialist passionate about designing and implementing real-world solutions across embedded electronics, web technologies, and automation. Recognized for practical innovation, reliability, and a drive to optimize both hardware and software.
+                </p>
+                <p>
+                    I focus on building robust technology for demanding environments—integrating sensors, displays, communication protocols, and cloud connectivity to create efficient, intuitive systems that solve real user problems.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <b>Embedded Systems</b>
+                    <ul>
+                        <li>Microcontrollers: 32-bit and ARM-based</li>
+                        <li>PCB design, hardware troubleshooting</li>
+                        <li>Industrial communication (serial, CAN, digital I/O)</li>
+                        <li>Sensor, relay, and actuator integration</li>
+                    </ul>
+                </div>
+                <div>
+                    <b>Software & Web</b>
+                    <ul>
+                        <li>Python, JavaScript, HTML, CSS</li>
+                        <li>Backend frameworks</li>
+                        <li>Relational and time-series databases</li>
+                        <li>Linux, Git, automation tools</li>
+                    </ul>
+                </div>
+                <div>
+                    <b>User Interface & Dashboard Design</b>
+                    <ul>
+                        <li>Custom touchscreen interfaces</li>
+                        <li>Animated UI elements linked to system status</li>
+                        <li>Responsive web dashboards for live data</li>
+                        <li>Graphic and visual design for user experience</li>
+                    </ul>
+                </div>
+                <div>
+                    <b>Other Interests</b>
+                    <ul>
+                        <li>CNC machine control and customization</li>
+                        <li>Process automation</li>
+                        <li>Voice and AI-enabled device features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Project Highlights</h2>
+            <div class="project">
+                <b>Industrial Safety & Monitoring Systems</b> <span class="tag">Microcontroller</span> <span class="tag">Industrial</span> <span class="tag">Automation</span>
+                <div>
+                    Developed and installed field-ready panels for safety-critical equipment. Projects included real-time sensor monitoring, advanced alarm logic, system reset controls, firmware updates over-the-air, and touchscreen UIs with animated feedback. Emphasis on high reliability, compliance, and robust event logging.
+                </div>
+            </div>
+            <div class="project">
+                <b>Touch Display System for Field Devices</b> <span class="tag">Embedded UI</span> <span class="tag">Data Logging</span>
+                <div>
+                    Created an interactive display dashboard for data visualization, system status reporting, event tracking, and network communication. Integrated live sensor data, wireless module support, and custom interface animations to enhance usability in demanding environments.
+                </div>
+            </div>
+            <div class="project">
+                <b>Web Platform for Commerce and Management</b> <span class="tag">Full-Stack</span> <span class="tag">Web App</span>
+                <div>
+                    Built a multi-role online platform from scratch: included product management, user registration, authentication, password recovery, and real-time invoicing. Implemented secure database integration and provided both user and admin access controls.
+                </div>
+            </div>
+            <div class="project">
+                <b>Mobile Asset Tracking & Communication</b> <span class="tag">Wireless</span> <span class="tag">IoT</span>
+                <div>
+                    Integrated location data processing and wireless communication modules for asset tracking, data relay, and remote monitoring. Built real-time mapping dashboards and streamlined cross-device compatibility for efficient fleet management.
+                </div>
+            </div>
+            <div class="project">
+                <b>Precision Machine Workflow & Customization</b> <span class="tag">Automation</span> <span class="tag">Hardware</span>
+                <div>
+                    Designed and optimized workflows for precision machine tools, including digital customization, process control, and pricing strategy for personalized production. Automated repetitive tasks to improve accuracy and efficiency.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>User Interface & UX Design</h2>
+            <ul>
+                <li>Designed custom control panels with animated indicators and real-time feedback</li>
+                <li>Developed web and device interfaces focused on clear, actionable data presentation</li>
+                <li>Built dashboards for sensor, event, and maintenance data</li>
+                <li>Created visual assets and icons for branding and operator guidance</li>
+                <li>Tested for intuitive operation in both field and desktop settings</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Work & Technical Interests</h2>
+            <ul>
+                <li>Design of safety systems and remote monitoring solutions</li>
+                <li>Custom hardware prototyping for industrial and field applications</li>
+                <li>Automation of data acquisition and control processes</li>
+                <li>Development of intelligent, voice-responsive user panels</li>
+                <li>Available for collaboration, freelance, or consulting engagements</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <ul class="contact-info">
+                <li><b>Email:</b> <a href="gert@semper-fi.co.za">gert@semper-fi.co.za</a></li>
+                <li><b>GitHub:</b> <a href="Private Preferred">Private Preferred</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
